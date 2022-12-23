@@ -1,0 +1,4 @@
+class Solution:
+    def bulbSwitch(self, n: int) -> int:
+        sqrtn=int(n**(1/2))
+        return sqrtn

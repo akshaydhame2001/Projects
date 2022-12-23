@@ -1,0 +1,11 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        x = [int(a) for a in str(n)]
+        sun = 0;    
+        mul = 1;   
+#Loop through the array to calculate sum of elements    
+        for i in range(0, len(x)):
+            sun = sun + x[i];
+            mul*= x[i]
+            ans = mul-sun
+        return ans
