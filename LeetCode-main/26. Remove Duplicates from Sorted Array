@@ -1,0 +1,7 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        enum=sorted(list(set(nums)))
+        k=len(enum)
+        for i in range(k):
+            nums[i]=enum[i]
+        return k
